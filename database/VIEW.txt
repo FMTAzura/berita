@@ -1,0 +1,1 @@
+CREATE OR REPLACE VIEW admin_pasien AS SELECT r.pasien, p.nama, p.no_hp, p.jurusan, d.nama_dokter, d.spesialis, r.tanggal_temu, r.catatan, r.status FROM tbl_rawat r, tbl_pasien p, tbl_dokter d WHERE r.pasien=p.nim AND r.dokter=d.id_dokter
